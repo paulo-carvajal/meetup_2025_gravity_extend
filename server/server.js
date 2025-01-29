@@ -10,12 +10,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Ruta para manejar las solicitudes POST al endpoint /form
 app.post('/form', (req, res) => {
-    const { nombre, email, mensaje } = req.body;
+    const { nombre, email, clave } = req.body;
 
     // Aquí puedes procesar los datos recibidos
     console.log('Nombre:', nombre);
     console.log('Email:', email);
-    console.log('Mensaje:', mensaje);
+    console.log('Clave:', clave);
 
     // Responder al cliente
     res.json({
@@ -23,7 +23,7 @@ app.post('/form', (req, res) => {
         data: {
             nombre,
             email,
-            mensaje
+            clave
         }
     });
 });
