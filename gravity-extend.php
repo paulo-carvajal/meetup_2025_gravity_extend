@@ -15,6 +15,16 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Include files:
-// require plugin_dir_path( __FILE__ ) . 'includes/populate-select-api.php';
-require plugin_dir_path( __FILE__ ) . 'includes/populate-input-entry.php';
-require plugin_dir_path( __FILE__ ) . 'includes/modify-field.php';
+
+// Muestra las entradas de un formulario con un shortcode.
+// require plugin_dir_path( __FILE__ ) . 'includes/entries-shortcode.php';
+
+// Rellena un campo de formulario con una entrada previa.
+// require plugin_dir_path( __FILE__ ) . 'includes/populate-input-entry.php';
+
+
+// Modifica campos de formulario al mostrarlos.
+// require plugin_dir_path( __FILE__ ) . 'includes/modify-field.php';
+
+// Genera un formulario con quiz. Desactivar nada más usarlo.
+// require plugin_dir_path( __FILE__ ) . 'includes/quiz/quiz-create-form.php';
